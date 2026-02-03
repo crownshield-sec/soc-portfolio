@@ -57,3 +57,9 @@
   - Acquire host triage artifacts (process tree, hashes, persistence checks, EDR timeline).
   - Determine whether secondary payload(s) executed and whether persistence was established.
   - Validate scope across the environment and confirm block/isolation actions are complete.
+ 
+## Detection and Prevention Improvements (SOC Feedback Loop)
+- Add a detection rule for newly observed domains contacted within a short time window after a user executes a new/unknown installer.
+- Alert on repeated outbound TLS connections to low-reputation infrastructure shortly after software installation events.
+- Strengthen controls for user-installed software (application allowlisting or approval workflow) to reduce exposure to trojanized “productivity” tools.
+
