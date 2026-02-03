@@ -23,7 +23,7 @@
 - Indicators (IPs/domains/hashes):
   - Domain(s): <SANITIZED_DOMAIN_1>, <SANITIZED_DOMAIN_2>
   - IP(s): <SANITIZED_IP_1>
-  - URL(s): <SANITIZED_URL_1> (if applicable)
+  - URL(s): 
   - Hash: <SANITIZED_HASH> (if applicable)
 
 ## Analysis
