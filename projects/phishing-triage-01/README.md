@@ -1,5 +1,12 @@
 # Phishing Triage Mini-Report (Lab)
 
+## Start here
+Read in this order:
+1. `triage-note.md`
+2. `email-artifact-review.md`
+3. `ioc-tracking.csv`
+4. `escalation-summary.md`
+
 ## Objective
 Demonstrate SOC Level 1 phishing triage: validate the report, assess intent, extract indicators, and produce escalation-ready recommendations.
 
