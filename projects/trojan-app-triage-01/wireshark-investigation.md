@@ -37,7 +37,7 @@ A user downloaded and executed a “productivity” application. Shortly after e
   - `<SANITIZED_DOMAIN>` (primary C2 candidate)
   - `<SANITIZED_DOMAIN_2>` (secondary domain)
   - `<SANITIZED_IP_1>` (destination IP)
-  - `<SANITIZED_URL_1>` (if explicitly observed)
+
 - Documented recommended containment actions (DNS/proxy/firewall blocks) and hunting pivots.
 
 ## Filters and Views Used (Examples)
@@ -75,9 +75,10 @@ A user downloaded and executed a “productivity” application. Shortly after e
 
 **Assessment:** Pattern is consistent with callback or beacon-like behavior, raising the likelihood of trojanized or staged malware activity.
 
-### 4) URL-level detail (only if explicitly observed)
-- If the capture contains explicit HTTP requests or visible URIs, record the suspicious request path as `<SANITIZED_URL_1>`.
-- If most traffic is encrypted (TLS), rely on DNS + destination IP + timing correlation rather than inventing URL paths.
+### 4) Application-layer detail limitation (TLS + policy)
+Most observed web traffic in this capture is TLS-encrypted, which limits visibility into full URL paths and request content. In addition, portfolio data-handling constraints prohibit publishing URLs or other identifying infrastructure details. 
+Therefore, validation of suspected trojanized behavior is based on defensible network pivots and patterns: DNS queries, destination IP correlation, timing alignment with execution/alert context, and repeatable outbound connection behavior (e.g., callback/beacon-like activity).
+
 
 **Assessment:** URL-level evidence increases confidence, but absence of a URL is common when traffic is encrypted.
 
@@ -85,8 +86,8 @@ A user downloaded and executed a “productivity” application. Shortly after e
 - Domain (primary): `<SANITIZED_DOMAIN>`  
 - Domain (secondary): `<SANITIZED_DOMAIN_2>`  
 - Destination IP: `<SANITIZED_IP_1>`  
-- URL (optional): `<SANITIZED_URL_1>`  
-- File hash (optional): `<SANITIZED_SHA256>` (if obtained from installer/dropped file)
+- URL   
+- File hash: `<SANITIZED_SHA256>` (if obtained from installer/dropped file)
 
 ## OSINT Enrichment Guidance (Summary)
 - VirusTotal:
