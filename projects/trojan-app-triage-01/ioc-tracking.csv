@@ -1,4 +1,5 @@
 date_added,indicator_type,indicator,value,source,confidence,severity,context,action,status,notes
-2026-02-02,domain,primary_c2,<SANITIZED_DOMAIN>,wireshark+osint,medium,high,post-execution outbound,DNS/proxy block,open,Primary domain observed during post-execution activity; OSINT supports elevated risk
-2026-02-02,domain,secondary_domain,<SANITIZED_DOMAIN_2>,wireshark,medium,high,dns lookup after execution,DNS/proxy block,open,Secondary domain observed in DNS queries during the same window
-2026-02-02,ip,destination_ip,<SANITIZED_IP_1>,wireshark,medium,high,outbound connection destination,Firewall block,open,Destination IP contacted shortly after execution; correlates to alert window
+2026-02-02,domain,primary_c2,<SANITIZED_DOMAIN_1>,wireshark+osint,medium,high,post-execution outbound,DNS/proxy block,open,Primary domain observed post-execution
+2026-02-02,domain,secondary_domain,<SANITIZED_DOMAIN_2>,wireshark,medium,high,dns lookup after execution,DNS block,open,Secondary domain observed in DNS queries
+2026-02-02,ip,destination_ip,<SANITIZED_IP_1>,wireshark,medium,high,outbound connection destination,FW block,open,Destination IP contacted post-execution
+2026-02-02,hash,file_hash,<SANITIZED_SHA256>,endpoint+osint,medium,high,installer or dropped file,Quarantine,open,Hash recorded for identification and blocking
