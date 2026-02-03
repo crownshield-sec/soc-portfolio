@@ -1,4 +1,18 @@
 # Trojanized Productivity App Download — Alert Triage & Escalation (Lab)
+## Start here (recommended reading order)
+
+1. **Triage Note** → [triage-note.md](./triage-note.md)  
+2. **Wireshark Investigation Notes** → [wireshark-investigation.md](./wireshark-investigation.md)  
+3. **IOC Tracker** → [ioc-tracking.csv](./ioc-tracking.csv)  
+4. **Escalation Summary** → [escalation-summary.md](./escalation-summary.md)
+
+---
+## What each file contains (quick map)
+
+- **triage-note.md**: initial alert context, risk framing, evidence collected, and the Level 1 decision to escalate.  
+- **wireshark-investigation.md**: how you validated the alert using DNS/IP/timing pivots (and TLS constraints), plus investigation pivots for Level 2.  
+- **ioc-tracking.csv**: sanitized indicators + source + severity + recommended blocks/actions.  
+- **escalation-summary.md**: executive-ready handoff (timeline, key findings, containment, and Level 2 requested actions).
 
 ## Objective
 Demonstrate SOC Level 1 alert triage and escalation decision-making by validating a suspected trojanized application download using network evidence (Wireshark) and OSINT enrichment (VirusTotal/Talos), then producing an escalation-ready incident package.
