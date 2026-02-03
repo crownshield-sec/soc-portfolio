@@ -5,7 +5,7 @@ A user downloaded and executed a “productivity” application. Shortly after e
 
 ## Objective
 1) Confirm whether post-execution network activity is consistent with trojanized behavior.  
-2) Identify and document actionable indicators (domains/IPs/URLs) for containment and hunting.  
+2) Identify and document actionable indicators (domains/IPs) for containment and hunting.  
 3) Provide clear pivots and next investigative steps for Level 2.
 
 ## Data Reviewed (Sanitized)
@@ -29,15 +29,14 @@ A user downloaded and executed a “productivity” application. Shortly after e
 ### Step 3 — Validate behavior patterns
 - Looked for signals consistent with malware stages:
   - Beaconing (regular interval connections)
-  - Staging (download of additional content)
-  - Command-and-control indicators (repeated callback to a domain/IP, unusual request patterns)
+  - Staging (retrieval of additional content; visibility may be limited under TLS)
+  - Command-and-control indicators (repeated callback to a domain/IP, unusual connection frequency)
 
 ### Step 4 — Extract indicators and document pivots
 - Recorded primary indicators:
   - `<SANITIZED_DOMAIN>` (primary C2 candidate)
   - `<SANITIZED_DOMAIN_2>` (secondary domain)
   - `<SANITIZED_IP_1>` (destination IP)
-
 - Documented recommended containment actions (DNS/proxy/firewall blocks) and hunting pivots.
 
 ## Filters and Views Used (Examples)
@@ -76,26 +75,20 @@ A user downloaded and executed a “productivity” application. Shortly after e
 **Assessment:** Pattern is consistent with callback or beacon-like behavior, raising the likelihood of trojanized or staged malware activity.
 
 ### 4) Application-layer detail limitation (TLS + policy)
-Most observed web traffic in this capture is TLS-encrypted, which limits visibility into full URL paths and request content. In addition, portfolio data-handling constraints prohibit publishing URLs or other identifying infrastructure details. 
-Therefore, validation of suspected trojanized behavior is based on defensible network pivots and patterns: DNS queries, destination IP correlation, timing alignment with execution/alert context, and repeatable outbound connection behavior (e.g., callback/beacon-like activity).
-
-
-**Assessment:** URL-level evidence increases confidence, but absence of a URL is common when traffic is encrypted.
+Most observed web traffic in this capture is TLS-encrypted, which limits visibility into full URL paths and request content. In addition, portfolio data-handling constraints prohibit publishing URLs or identifying infrastructure details. Therefore, validation is based on defensible network pivots and patterns: DNS queries, destination IP correlation, timing alignment with execution/alert context, and repeatable outbound connection behavior (e.g., callback/beacon-like activity).
 
 ## Indicator Extraction (Recorded in `ioc-tracking.csv`)
 - Domain (primary): `<SANITIZED_DOMAIN>`  
 - Domain (secondary): `<SANITIZED_DOMAIN_2>`  
-- Destination IP: `<SANITIZED_IP_1>`  
-- URL   
-- File hash: `<SANITIZED_SHA256>` (if obtained from installer/dropped file)
+- Destination IP: `<SANITIZED_IP_1>`
 
 ## OSINT Enrichment Guidance (Summary)
 - VirusTotal:
-  - Check domain/IP detections, associated files, and communicating samples.
-  - Use relationship graphs (if available) to identify additional infrastructure.
+  - Check domain/IP detections, associated samples, and communicating relationships.
+  - Use relationships (if available) to identify additional infrastructure for hunting.
 - Talos:
   - Validate reputation and categorize domain/IP risk.
-  - Note any indicators tied to known threat activity.
+  - Note any associations to known malicious activity.
 
 **Outcome expectation:** If OSINT indicates malicious or suspicious reputation, raise confidence and strengthen containment recommendations.
 
@@ -112,16 +105,16 @@ Therefore, validation of suspected trojanized behavior is based on defensible ne
   - DNS/proxy block for `<SANITIZED_DOMAIN>` and `<SANITIZED_DOMAIN_2>`
   - Firewall block for `<SANITIZED_IP_1>`
 - Preserve evidence:
-  - Save pcap, SIEM alert context, and any installer artifact (if available).
+  - Save pcap and SIEM alert context; retain installer artifact if available.
 
 ### Level 2 requested follow-up
 - Host-based confirmation:
   - Identify parent process initiating outbound traffic (process tree + command line).
   - Check persistence (autoruns/services/scheduled tasks).
-  - Validate whether additional payloads were dropped or executed.
+  - Validate whether secondary payload(s) were dropped or executed.
 - Scope/hunt:
   - Search enterprise telemetry for the same domains/IPs and similar patterns.
   - Identify other endpoints with matching DNS queries or outbound destinations.
 
 ## Notes on Sanitization
-All indicators, hostnames, user identifiers, and timestamps are sanitized. This project demonstrates repeatable SOC workflow: alert context → network validation → IOC extraction → escalation-ready documentation.
+All indicators, hostnames, user identifiers, and timestamps are sanitized. This project demonstrates a repeatable SOC workflow: alert context → network validation → IOC extraction → escalation-ready documentation.
