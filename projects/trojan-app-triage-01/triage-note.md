@@ -21,10 +21,10 @@
 - Network capture reviewed:
   - Wireshark review of post-execution traffic window (pcap)
   - Note: Traffic is largely TLS-encrypted; analysis relies on DNS pivots, destination IP correlation, timing, and connection patterns rather than URL paths.
-- Indicators (domains/IPs/hashes):
+  - - Indicators (domains/IPs):
   - Domains: <SANITIZED_DOMAIN_1>, <SANITIZED_DOMAIN_2>
   - IP: <SANITIZED_IP_1>
-  - File hash: <SANITIZED_HASH> (only if obtained from installer/endpoint telemetry)
+  - File hash: Not available at Level 1 (no installer artifact captured in this lab case)
 
 ## Analysis
 - Likely impact:
