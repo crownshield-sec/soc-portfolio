@@ -1,0 +1,2 @@
+date_added,indicator_type,indicator,value,source,confidence,severity,context,action,status,notes
+2026-02-02,domain,primary_c2,<SANITIZED_DOMAIN>,wireshark+osint,medium,high,post-execution outbound,DNS/proxy block,open,Sanitized example for portfolio
