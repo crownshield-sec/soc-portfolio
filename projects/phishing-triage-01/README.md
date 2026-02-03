@@ -9,7 +9,7 @@ Read in this order:
 
 
 ## Objective
-Demonstrate SOC Level 1 phishing triage: validate the report, assess intent, extract indicators, and produce escalation-ready recommendations.
+**Demonstrates:** SOC L1 triage → indicator extraction → containment recommendations → escalation-ready handoff.
 
 ## Scenario (Sanitized)
 A user reported a suspicious email claiming urgency and requesting action via a link. The objective was to triage the message, assess risk, extract indicators, and recommend containment and user guidance.
