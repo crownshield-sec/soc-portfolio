@@ -3,6 +3,9 @@
 - ISP gateway: Spectrum-provided router/gateway (primary routing, NAT/DHCP, WAN-facing controls)
 - Wireless access point: TP-Link Archer A8 in Access Point (AP) mode (Wi-Fi security and guest wireless where supported)
 - Note: Some router security controls and logs are limited or not exposed in ISP-managed interfaces; evidence is captured where settings are available.
+## Control Ownership (Where Evidence Comes From)
+- Spectrum gateway (router functions): remote administration/WAN management, UPnP, port forwarding, firewall defaults, DHCP/NAT, any gateway-level logging (if exposed).
+- TP-Link Archer A8 (AP mode): Wi-Fi encryption mode, WPS, guest Wi-Fi settings/isolation (if supported), AP firmware version.
 
 ## Objective
 Implement and verify baseline router and Wi-Fi hardening controls that reduce common home-network attack paths (exposed management, unsafe defaults, weak wireless security, unnecessary inbound exposure) and document evidence in an analyst-ready format.
