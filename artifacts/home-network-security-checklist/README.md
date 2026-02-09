@@ -1,1 +1,76 @@
+# Home Network Security Checklist (SOC L1 Evidence Pack)
+
+## Objective
+Implement and verify baseline router and Wi-Fi hardening controls that reduce common home-network attack paths (exposed management, unsafe defaults, weak wireless security, unnecessary inbound exposure) and document evidence in an analyst-ready format.
+
+## Scope
+**In scope:** router administrative security, WAN exposure controls, Wi-Fi security baseline, guest/IoT segmentation (as supported), DNS configuration (as applicable), and basic logging/visibility.  
+**Out of scope:** endpoint EDR, enterprise SIEM ingestion, vulnerability scanning beyond router firmware, and advanced IDS/IPS tuning.
+
+## Control Checklist (Implementation + Verification)
+
+### A) Administrative Hardening (Control Plane)
+- [ ] Admin password updated (strong + unique)
+- [ ] Remote administration disabled (WAN-side management OFF)
+- [ ] Firmware updated (or update plan documented)
+- [ ] Time/NTP configured correctly (log integrity)
+- [ ] Configuration backup created and stored securely
+
+### B) Reduce External Exposure (Attack Surface)
+- [ ] UPnP disabled (or exception documented)
+- [ ] Port forwarding reviewed; unnecessary rules removed
+- [ ] WPS disabled
+- [ ] Firewall enabled; inbound deny-by-default confirmed
+
+### C) Wi-Fi Security Baseline
+- [ ] WPA3-Personal enabled (or WPA2-AES fallback documented)
+- [ ] Strong passphrase configured
+- [ ] Guest network enabled and isolated from LAN
+- [ ] IoT segmented (separate SSID/VLAN/guest-based isolation if supported)
+
+### D) DNS / Basic Threat Reduction (Optional by Router Capability)
+- [ ] DNS set to a reputable resolver (documented)
+- [ ] If supported: encrypted DNS (DoH/DoT) enabled
+- [ ] If supported: malicious domain blocking / security DNS feature enabled
+
+### E) Observability (SOC Mindset)
+- [ ] Router logging enabled (as supported)
+- [ ] Logging limitations documented (retention, event types)
+- [ ] If supported: syslog/export configured (optional)
+
+## Validation Tests Performed
+- Guest isolation test: guest device cannot reach LAN IPs/admin console (as configured)
+- UPnP status verified OFF
+- Firewall / inbound deny setting verified in router UI
+- Firmware version/date captured as evidence
+
+## Evidence Appendix (Sanitized)
+Screenshots are stored in `images/` and referenced below.
+
+1. **Remote administration OFF**  
+   `images/01_remote_admin_off.png`
+
+2. **Firmware version/status**  
+   `images/02_firmware_version.png`
+
+3. **UPnP OFF**  
+   `images/03_upnp_off.png`
+
+4. **Port forwarding review**  
+   `images/04_port_forwarding.png`
+
+5. **Wi-Fi security mode (WPA3/WPA2-AES)**  
+   `images/05_wifi_security_mode.png`
+
+6. **WPS OFF**  
+   `images/06_wps_off.png`
+
+7. **Guest network enabled + isolation**  
+   `images/07_guest_isolation.png`
+
+8. **Logging settings**  
+   `images/08_logging.png`
+
+## Sanitization Statement
+All screenshots have been sanitized to remove identifying information including public IPs, SSIDs, MAC addresses, device names, serial numbers, QR codes, and credentials.
 
