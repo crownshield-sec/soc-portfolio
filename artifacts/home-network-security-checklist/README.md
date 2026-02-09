@@ -1,4 +1,8 @@
 # Home Network Security Checklist (SOC L1 Evidence Pack)
+## Environment (Home Setup)
+- ISP gateway: Spectrum-provided router/gateway (primary routing, NAT/DHCP, WAN-facing controls)
+- Wireless access point: TP-Link Archer A8 in Access Point (AP) mode (Wi-Fi security and guest wireless where supported)
+- Note: Some router security controls and logs are limited or not exposed in ISP-managed interfaces; evidence is captured where settings are available.
 
 ## Objective
 Implement and verify baseline router and Wi-Fi hardening controls that reduce common home-network attack paths (exposed management, unsafe defaults, weak wireless security, unnecessary inbound exposure) and document evidence in an analyst-ready format.
