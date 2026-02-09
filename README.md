@@ -40,9 +40,7 @@ Lab-based SOC portfolio demonstrating repeatable security operations workflows: 
 
 ## Artifacts (Reusable Deliverables)
 Planned or in progress under `artifacts/`:
-- **Home Network Security Checklist (with screenshots)**
-- **Phishing Spotter Guide (realistic examples + triage flow)**
-- **Incident Response One-Pager (small business “first 60 minutes”)**
+- [Home Network Security Checklist (with screenshots)](artifacts/home-network-security-checklist/README.md)
 
 ## Templates
 Reusable SOC documentation templates are under `templates/`.
@@ -50,3 +48,4 @@ Reusable SOC documentation templates are under `templates/`.
 ## Data Handling Note
 All content is lab-based and sanitized. Identifiers (domains, IPs, usernames, hostnames, timestamps) are redacted or replaced with representative values. No proprietary or sensitive customer/employer data is included.
 
+- [Home Network Security Checklist (with screenshots)](artifacts/home-network-security-checklist/README.md)
