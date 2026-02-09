@@ -45,32 +45,15 @@ Implement and verify baseline router and Wi-Fi hardening controls that reduce co
 - Firmware version/date captured as evidence
 
 ## Evidence Appendix (Sanitized)
-Screenshots are stored in `images/` and referenced below.
+Status: **Pending upload** — screenshots will be added after sanitization and redaction.
 
-1. **Remote administration OFF**  
-   `images/01_remote_admin_off.png`
-
-2. **Firmware version/status**  
-   `images/02_firmware_version.png`
-
-3. **UPnP OFF**  
-   `images/03_upnp_off.png`
-
-4. **Port forwarding review**  
-   `images/04_port_forwarding.png`
-
-5. **Wi-Fi security mode (WPA3/WPA2-AES)**  
-   `images/05_wifi_security_mode.png`
-
-6. **WPS OFF**  
-   `images/06_wps_off.png`
-
-7. **Guest network enabled + isolation**  
-   `images/07_guest_isolation.png`
-
-8. **Logging settings**  
-   `images/08_logging.png`
-
-## Sanitization Statement
-All screenshots have been sanitized to remove identifying information including public IPs, SSIDs, MAC addresses, device names, serial numbers, QR codes, and credentials.
+Planned evidence files (to be uploaded into `images/`):
+- `images/01_remote_admin_off.png`
+- `images/02_firmware_version.png`
+- `images/03_upnp_off.png`
+- `images/04_port_forwarding.png`
+- `images/05_wifi_security_mode.png`
+- `images/06_wps_off.png`
+- `images/07_guest_isolation.png`
+- `images/08_logging.png`
 
