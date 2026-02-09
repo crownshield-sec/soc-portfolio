@@ -42,6 +42,7 @@ Lab-based SOC portfolio demonstrating repeatable security operations workflows: 
 Planned or in progress under `artifacts/`:
 - [Home Network Security Checklist (with screenshots)](artifacts/home-network-security-checklist/README.md)
 - [Phishing Spotter Guide (realistic examples + triage flow)](artifacts/phishing-spotter-guide/README.md)
+- [Incident Response One-Pager (small business “first 60 minutes”)](artifacts/incident-response-one-pager/README.md)
 
 ## Templates
 Reusable SOC documentation templates are under `templates/`.
