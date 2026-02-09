@@ -48,4 +48,4 @@ Reusable SOC documentation templates are under `templates/`.
 ## Data Handling Note
 All content is lab-based and sanitized. Identifiers (domains, IPs, usernames, hostnames, timestamps) are redacted or replaced with representative values. No proprietary or sensitive customer/employer data is included.
 
-- [Home Network Security Checklist (with screenshots)](artifacts/home-network-security-checklist/README.md)
+
