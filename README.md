@@ -4,15 +4,15 @@ Hands-on SOC portfolio focused on alert triage, investigation workflows, inciden
 ## Featured (Quick View)
 - **Trojanized Productivity App Download — Alert Triage & Escalation**  
   `projects/trojan-app-triage-01/README.md`  
-  *Includes triage note, escalation summary, IOC tracking, and Wireshark investigation notes.*
+  *Analyst-style triage workflow including escalation summary, IOC tracking, and network investigation notes.*
 
 - **Phishing Triage Mini-Report**  
   `projects/phishing-triage-01/README.md`  
-  *Email artifact review, indicator extraction, and containment recommendations.*
+  *Phishing investigation involving artifact analysis, indicator extraction, and containment documentation.*
 
 - **SIEM Query Practice (Splunk) — Suspicious Authentication**  
   `projects/splunk-detections-01/README.md`  
-  *SPL-style searches, correlation logic, and triage-ready summaries.*
+  *SIEM-focused investigation using event correlation, SPL queries, and triage documentation workflows.*
 
 ## Focus Areas
 - Alert triage, severity assessment, and escalation decision-making
