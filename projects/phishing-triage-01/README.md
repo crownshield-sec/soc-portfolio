@@ -9,7 +9,7 @@ Investigation artifacts and analyst documentation:
 
 
 ## Objective
-**Demonstrates:** SOC L1 triage → indicator extraction → containment recommendations → escalation-ready handoff.
+**Demonstrates analyst triage workflow including indicator extraction, risk assessment, containment recommendations, and escalation-ready documentation.
 
 ## Scenario (Sanitized)
 A user reported a suspicious email claiming urgency and requesting action via a link. The objective was to triage the message, assess risk, extract indicators, and recommend containment and user guidance.
@@ -29,3 +29,13 @@ A user reported a suspicious email claiming urgency and requesting action via a 
 - Containment: block identified domains/URLs at email security/DNS/proxy as appropriate; quarantine similar messages.
 - User guidance: do not click; report similar emails; reset credentials if interaction occurred; enable MFA if not already enabled.
 - Detection improvements: add rules for similar sender patterns, subject/lure keywords, and newly observed domains; tune for false positives.
+
+## ## Skills Demonstrated
+- Phishing triage
+- IOC extraction and tracking
+- Security investigation workflows
+- Incident documentation
+- Risk assessment
+- Escalation analysis
+- Containment recommendations
+- Analyst reporting
