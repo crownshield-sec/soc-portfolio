@@ -9,7 +9,7 @@ Investigation artifacts and analyst documentation:
 
 
 ## Objective
-**Demonstrates analyst triage workflow including indicator extraction, risk assessment, containment recommendations, and escalation-ready documentation.
+Demonstrates analyst triage workflow including indicator extraction, risk assessment, containment recommendations, and escalation-ready documentation.
 
 ## Scenario (Sanitized)
 A user reported a suspicious email claiming urgency and requesting action via a link. The objective was to triage the message, assess risk, extract indicators, and recommend containment and user guidance.
