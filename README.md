@@ -1,7 +1,6 @@
 # SOC Portfolio (Splunk • Wireshark • TheHive)
 
-Lab-based SOC portfolio demonstrating repeatable security operations workflows: alert triage, investigation, documentation, and escalation. Deliverables are written in an analyst style and structured to resemble SOC Level 1 handoffs.
-
+Hands-on SOC portfolio focused on alert triage, investigation workflows, incident documentation, log analysis, and security operations reporting. Projects are structured to reflect analyst-style investigations and SOC Level 1 operational workflows.
 ## Featured (Quick View)
 - **Trojanized Productivity App Download — Alert Triage & Escalation**  
   `projects/trojan-app-triage-01/README.md`  
