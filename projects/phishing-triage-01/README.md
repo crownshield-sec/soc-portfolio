@@ -39,3 +39,6 @@ A user reported a suspicious email claiming urgency and requesting action via a 
 - Escalation analysis
 - Containment recommendations
 - Analyst reporting
+
+## Notes
+All indicators, domains, and identifying artifacts have been sanitized for safe public sharing. This project is intended to demonstrate SOC investigation workflow, analyst documentation practices, and escalation-oriented reporting.
