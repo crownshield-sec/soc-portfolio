@@ -20,6 +20,45 @@ Investigate suspicious authentication behavior using SIEM search logic, event co
 - Follow-up pivots:
 - Escalation summary approach:
 
+- ## Example SPL Queries
+
+### Repeated Failed Authentication Followed by Success
+
+```spl
+index=authentication_logs
+| stats count(eval(action="failure")) as failed_attempts,
+count(eval(action="success")) as successful_logins
+by user, src_ip
+| where failed_attempts > 5 AND successful_logins > 0
+```
+
+Purpose:
+Identify possible brute-force or password spraying activity followed by successful authentication.
+
+---
+
+### New Privileged Group Membership Activity
+
+```spl
+index=authentication_logs
+EventCode=4728 OR EventCode=4732
+```
+
+Purpose:
+Detect new privileged group membership events that may indicate privilege escalation activity.
+
+---
+
+### Unusual Authentication Time or Source Activity
+
+```spl
+index=authentication_logs
+| stats count by user, src_ip, _time
+```
+
+Purpose:
+Review authentication patterns for unusual login timing, source behavior, or anomalous access activity.
+
 ## Skills Demonstrated
 
 - SIEM investigation workflows
