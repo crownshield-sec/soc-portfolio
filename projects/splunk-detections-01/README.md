@@ -59,6 +59,14 @@ index=authentication_logs
 Purpose:
 Review authentication patterns for unusual login timing, source behavior, or anomalous access activity.
 
+## Investigation Screenshot
+
+### Suspicious Authentication Correlation
+
+The following investigation identified repeated failed authentication attempts followed by a successful login from the same source IP address.
+
+![Splunk Authentication Investigation](images/splunk-auth-investigation.png)
+
 ## Skills Demonstrated
 
 - SIEM investigation workflows
