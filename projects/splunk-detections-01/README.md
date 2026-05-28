@@ -66,7 +66,7 @@ Review authentication patterns for unusual login timing, source behavior, or ano
 
 The following investigation identified repeated failed authentication attempts followed by a successful login from the same source IP address.
 
-![Splunk Authentication Investigation](images/splunk-auth-investigation.png)
+(images/splunk-auth-investigation.png)
 
 ## Skills Demonstrated
 
