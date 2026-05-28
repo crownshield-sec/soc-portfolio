@@ -31,6 +31,14 @@ A network monitoring system generated Suricata IDS alerts associated with suspic
 - tcpdump
 - Linux command line
 
+## Destination IP Analysis
+
+The following Suricata telemetry analysis identified destination IP activity observed during packet inspection and protocol analysis.
+
+<a href="images/suricata-dest-ip-analysis.png">
+  <img src="images/suricata-dest-ip-analysis.png" width="1000">
+</a>
+
 ## Skills Demonstrated
 
 - IDS alert triage
