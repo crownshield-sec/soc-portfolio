@@ -1,4 +1,5 @@
-## SIEM Investigation — Suspicious Authentication Activity
+## SIEM Investigation 
+## Suspicious Authentication Activity
 
 ## Investigation Objective
 Investigate suspicious authentication behavior using SIEM search logic, event correlation, and analyst-oriented triage workflows.
