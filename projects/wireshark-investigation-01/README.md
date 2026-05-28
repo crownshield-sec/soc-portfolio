@@ -56,25 +56,25 @@ ip.addr == <SANITIZED_IP>
 ### DNS Traffic Analysis
 
 <a href="images/dns_wireshark.png">
-  <img src="images/dns_wireshark.png" width="1000">
+  <img src="images/dns_wireshark.png" width="850">
 </a>
 
 ### HTTP Traffic Analysis
 
-<a href="images/http_wireshark.png">
-  <img src="images/http_wireshark.png" width="1000">
+<a href="images/dns_wireshark.png">
+  <img src="images/dns_wireshark.png" width="850">
 </a>
 
 ### ICMP Traffic Analysis
 
-<a href="images/icmp_wireshark.png">
-  <img src="images/icmp_wireshark.png" width="1000">
+<a href="images/dns_wireshark.png">
+  <img src="images/dns_wireshark.png" width="850">
 </a>
 
 ### Host IP Traffic Review
 
-<a href="images/ip_addr_wireshark.png">
-  <img src="images/ip_addr_wireshark.png" width="1000">
+<a href="images/dns_wireshark.png">
+  <img src="images/dns_wireshark.png" width="850">
 </a>
 
 ---
