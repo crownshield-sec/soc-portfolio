@@ -52,8 +52,12 @@ The Suricata telemetry review identified the following destination addresses:
 
 Purpose: Extract unique destination IP addresses from recent Suricata telemetry while filtering malformed JSON records and removing duplicate values.
 
+### Command Used
+
+```bash
 tail -200 /var/log/suricata/eve.json | jq -R 'fromjson? | select(.dest_ip) | .dest_ip' | sort -u
 ```
+
 Purpose: Extract unique destination IP addresses from recent Suricata telemetry while filtering malformed JSON records and removing duplicate values.
 
 ## Analyst Conclusion
