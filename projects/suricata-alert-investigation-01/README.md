@@ -39,6 +39,18 @@ The following Suricata telemetry analysis identified destination IP activity obs
   <img src="images/suricata-dest-ip-analysis.png" width="1000">
 </a>
 
+### Findings
+
+The Suricata telemetry review identified the following destination addresses:
+
+| Destination IP | Observation |
+|---------------|-------------|
+| 172.30.127.255 | Internal broadcast traffic observed within the WSL environment. |
+| 224.0.0.251 | Multicast DNS (mDNS) discovery traffic. |
+| ff02::fb | IPv6 multicast DNS traffic. |
+| 91.189.91.157 | External Ubuntu/Canonical infrastructure associated with system services and time synchronization. |
+
+No malicious destination addresses were identified during this review. The observed traffic was consistent with normal operating system and network discovery behavior.
 ## Skills Demonstrated
 
 - IDS alert triage
