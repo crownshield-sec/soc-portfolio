@@ -56,6 +56,11 @@ No malicious destination addresses were identified during this review. The obser
 ```bash
 tail -200 /var/log/suricata/eve.json | jq -R 'fromjson? | select(.dest_ip) | .dest_ip' | sort -u
 ```
+Purpose: Extract unique destination IP addresses from recent Suricata telemetry while filtering malformed JSON records and removing duplicate values.
+
+### Analyst Conclusion
+
+No malicious network destinations were identified during this review. The observed communications were consistent with expected operating system services, multicast discovery activity, and Ubuntu infrastructure connectivity. No escalation or containment actions were required.
 
 ## Skills Demonstrated
 
