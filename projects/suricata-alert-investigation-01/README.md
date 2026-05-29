@@ -56,7 +56,7 @@ tail -200 /var/log/suricata/eve.json | jq -R 'fromjson? | select(.dest_ip) | .de
 ```
 Purpose: Extract unique destination IP addresses from recent Suricata telemetry while filtering malformed JSON records and removing duplicate values.
 
-### Analyst Conclusion
+## Analyst Conclusion
 
 No malicious destination addresses were identified during this investigation. Observed communications were consistent with expected operating system services, multicast DNS discovery traffic, and Ubuntu infrastructure connectivity. Based on the available evidence, no escalation or containment actions were required.
 
