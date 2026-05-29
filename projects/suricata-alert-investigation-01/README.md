@@ -50,7 +50,7 @@ The Suricata telemetry review identified the following destination addresses:
 | ff02::fb | IPv6 multicast DNS traffic. |
 | 91.189.91.157 | External Ubuntu/Canonical infrastructure associated with system services and time synchronization. 
 
-No malicious destination addresses were identified during this review. The observed traffic was consistent with normal operating system and network discovery behavior.
+No malicious destination addresses were identified during this investigation. Observed communications were consistent with expected operating system services, multicast DNS discovery traffic, and Ubuntu infrastructure connectivity. Based on the available evidence, no escalation or containment actions were required.
 
 ### Command Used
 ```bash
