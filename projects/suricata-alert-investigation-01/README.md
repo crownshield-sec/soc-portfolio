@@ -48,9 +48,15 @@ The Suricata telemetry review identified the following destination addresses:
 | 172.30.127.255 | Internal broadcast traffic observed within the WSL environment. |
 | 224.0.0.251 | Multicast DNS (mDNS) discovery traffic. |
 | ff02::fb | IPv6 multicast DNS traffic. |
-| 91.189.91.157 | External Ubuntu/Canonical infrastructure associated with system services and time synchronization. |
+| 91.189.91.157 | External Ubuntu/Canonical infrastructure associated with system services and time synchronization. 
 
 No malicious destination addresses were identified during this review. The observed traffic was consistent with normal operating system and network discovery behavior.
+
+### Command Used
+```bash
+tail -200 /var/log/suricata/eve.json | jq -R 'fromjson? | select(.dest_ip) | .dest_ip' | sort -u
+```
+
 ## Skills Demonstrated
 
 - IDS alert triage
