@@ -53,13 +53,20 @@ IOC Review
 </a>
 
 ## Findings
-Indicator Type	Sanitized Value	Observation
-Sender Domain	secure-alerts-example[.]com	Suspicious sender
-Embedded URL	account-verification-login[.]com	Credential harvesting risk
-Reply-To Domain	alerts-example-mail[.]com	Domain mismatch observed
-Email Subject	Account Verification Required	Urgency-based lure
+| Observation | Details |
+|------------|------------|
+| Message Theme | Account verification request |
+| Social Engineering Technique | Urgency and fear-based language |
+| Embedded Hyperlink | Present |
+| External Sender | Yes |
+| Credential Harvesting Indicators | Observed |
+| Indicator Type | Sanitized Value | Observation |
 
-The extracted indicators were consistent with phishing activity designed to redirect users to a fraudulent authentication page.
+|------------|------------|------------|
+| Sender Domain | secure-alerts-example[.]com | Suspicious sender |
+| Embedded URL | account-verification-login[.]com | Credential harvesting risk |
+| Reply-To Domain | alerts-example-mail[.]com | Domain mismatch observed |
+| Email Subject | Account Verification Required | Urgency-based lure |
 
 ## Risk Assessment
 
