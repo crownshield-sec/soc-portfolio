@@ -68,6 +68,22 @@ IOC Review
 | Embedded URL | account-verification-login[.]com | Credential harvesting risk |
 | Reply-To Domain | alerts-example-mail[.]com | Domain mismatch observed |
 | Email Subject | Account Verification Required | Urgency-based lure |
+
+## Social Engineering Analysis
+
+The message leveraged urgency-based language designed to pressure the recipient into immediate action without verification.
+
+### Indicators Observed
+
+- Account verification theme
+- Urgent call to action
+- External hyperlink
+- Suspicious sender infrastructure
+- Potential credential harvesting objective
+
+These characteristics are commonly associated with phishing campaigns targeting user credentials.
+
+
 ## Risk Assessment
 
 The email was evaluated to determine the likelihood of phishing activity and potential business impact.
