@@ -41,6 +41,30 @@ The Zeek connection log was reviewed to identify source and destination communic
   <img src="images/zeek-conn-analysis.png" width="1000">
 </a>
 
+## HTTP Analysis
+
+The Zeek HTTP log was reviewed to identify web requests, response codes, and application-layer metadata observed during packet capture analysis.
+
+### HTTP Log Review
+
+<a href="images/zeek-http-analysis.png">
+  <img src="images/zeek-http-analysis.png" width="1000">
+</a>
+
+### Findings
+
+The HTTP log identified successful web communications originating from the monitored host.
+
+| Observation | Details |
+|------------|------------|
+| Source Host | 172.30.126.212 |
+| Protocol | HTTP |
+| Response Status | 200 OK |
+| HTTP Version | 1.1 |
+| Content Type | application/x-debian-package |
+
+The observed traffic was consistent with Ubuntu package repository communications generated during system package installation activities. No suspicious HTTP requests or anomalous response codes were identified.
+
 ### Findings
 
 The connection log identified the following communication patterns:
