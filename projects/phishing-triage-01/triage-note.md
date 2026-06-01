@@ -58,9 +58,10 @@ Triage completed. Indicators extracted. Containment recommendations documented. 
   - Review email gateway telemetry for delivery scope and any additional recipients.
 
 ## Escalation Decision
-- Escalate to Level 2: YES
-- Reason:
-  - Escalate if user interaction occurred, credentials may be exposed, or indicators show high risk.
+Escalate to Level 2: Conditional
+Reason:
+Escalation is recommended if user interaction occurred, credentials may have been exposed, additional recipients are identified, or related phishing activity is observed elsewhere in the environment.
+
 - Level 2 requested follow-up (if escalated):
   - Review identity sign-in logs for suspicious access.
   - Conduct mailbox rule review and identify any follow-on phishing or persistence attempts.
