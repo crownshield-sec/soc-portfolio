@@ -1,7 +1,7 @@
 # Phishing Triage Investigation — Email Security Analysis
 
 ## Project Summary
-This project demonstrates a phishing email triage workflow involving email artifact review, indicator extraction, risk assessment, containment recommendations, and escalation-oriented analyst documentation. All indicators have been sanitized for public portfolio presentation.
+This project demonstrates a phishing email triage workflow involving phishing email review, indicator extraction, risk assessment, containment recommendations, and escalation-oriented analyst documentation. All indicators have been sanitized for public portfolio presentation.
 
 ## Investigation Objective
 
@@ -33,25 +33,8 @@ The reported email was reviewed to identify suspicious sender characteristics, m
 
 The reviewed message contained multiple phishing characteristics:
 
-## Observation	Details
-- Message Theme	Account verification request
-- Social Engineering Technique	Urgency and fear-based language
-- Embedded Hyperlink	Present
-- External Sender	Yes
-- Credential Harvesting Indicators	Observed
+## Email Artifact Analysis 
 
-The message attempted to pressure the recipient into immediate action through urgency-based language and an external login request.
-
-## Indicator Extraction Analysis
-
-Indicators of compromise (IOCs) were extracted and documented for investigation and potential blocking activities.
-
-IOC Review
-<a href="images/phishing-ioc-analysis.png">
-  <img src="images/phishing-ioc-analysis.png" width="1000">
-</a>
-
-## Findings
 | Observation | Details |
 |------------|------------|
 | Message Theme | Account verification request |
@@ -59,7 +42,12 @@ IOC Review
 | Embedded Hyperlink | Present |
 | External Sender | Yes |
 | Credential Harvesting Indicators | Observed |
-| Indicator Type | Sanitized Value | Observation |
+
+The message attempted to pressure the recipient into immediate action through urgency-based language and an external login request.
+
+## Indicator Extraction Analysis
+
+Indicators of compromise (IOCs) were extracted and documented for investigation and potential blocking activities.
 
 | Indicator Type | Sanitized Value | Observation |
 |------------|------------|------------|
@@ -99,9 +87,9 @@ The email was evaluated to determine the likelihood of phishing activity and pot
 
 ### Risk Rating
 
-**High**
-
-## Analyst Findings
+| Overall Risk Rating |
+|--------------------|
+| High |
 
 - Reviewed reported phishing email artifacts.
 - Identified urgency-based social engineering techniques.
@@ -113,6 +101,7 @@ The email was evaluated to determine the likelihood of phishing activity and pot
 The combination of urgency language, suspicious sender infrastructure, and embedded external links significantly increased the likelihood of credential theft.
 
 ## Containment & Escalation Recommendations
+
 ## Recommended Actions
 
 - Block identified domains and URLs at email security controls.
@@ -148,4 +137,9 @@ Analysis of the reported email identified multiple phishing indicators including
 - SOC reporting
 
 ## Notes
+
+All indicators, domains, URLs, and identifying artifacts have been sanitized for safe public sharing. This project is intended to demonstrate phishing triage workflow, IOC extraction, analyst documentation, and escalation-oriented reporting practices.
+
+
+
 All indicators, domains, and identifying artifacts have been sanitized for safe public sharing. This project is intended to demonstrate SOC investigation workflow, analyst documentation practices, and escalation-oriented reporting.
