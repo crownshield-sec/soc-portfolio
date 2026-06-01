@@ -1,5 +1,8 @@
 # Zeek Investigation — Network Connection Analysis
 
+## Project Summary
+This project demonstrates the use of Zeek network security monitoring to analyze packet capture telemetry, review connection metadata, investigate HTTP activity, and identify protocol anomalies within a Linux-based investigation environment.
+
 ## Investigation Objective
 
 Analyze Zeek network logs to identify connection activity, protocol behavior, source and destination communication patterns, and potential indicators of suspicious network behavior.
