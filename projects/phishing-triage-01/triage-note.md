@@ -27,17 +27,17 @@ Triage completed. Indicators extracted. Containment recommendations documented. 
 - Why it matters (risk):
   - Phishing may enable credential theft, malware delivery, or business process compromise.
 
-## Evidence Collected (Sanitized)
-- Email artifacts reviewed:
-  - Subject/sender display name vs. sender address alignment
-  - Reply-To and link destination mismatch checks
-  - Header authentication signals (SPF/DKIM/DMARC results if available)
-- Indicators extracted:
-  - Sender / From: support@secure-alerts-example[.]com
-  - Reply-To: `<SANITIZED_REPLYTO>` (if present)
-  - Domains: `<SANITIZED_DOMAIN_1>`, `<SANITIZED_DOMAIN_2>`
-  - URL(s): `<SANITIZED_URL_1>` (if explicitly observed)
-  - Attachment: `<SANITIZED_ATTACHMENT_NAME>` (if present)
+### Indicators Extracted
+
+- Sender / From: support@secure-alerts-example[.]com
+- Reply-To: alerts-example-mail[.]com
+- Domains:
+  - secure-alerts-example[.]com
+  - alerts-example-mail[.]com
+- URL(s):
+  - account-verification-login[.]com
+- Attachment:
+  - None observed
 
 ## Analysis
 - Probable objective: Credeential Harvesting
