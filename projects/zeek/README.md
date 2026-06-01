@@ -100,6 +100,29 @@ The anomaly log identified the following observations:
 
 No anomalous protocol behavior requiring escalation was identified. The observed events were consistent with expected operating system and network stack behavior.
 
+## Analyst Findings
+
+- Reviewed Zeek connection telemetry using conn.log.
+- Investigated HTTP request metadata using http.log.
+- Identified NTP synchronization communications.
+- Observed successful HTTP repository communications.
+- Reviewed protocol anomaly records in weird.log.
+- Validated checksum-related events as expected virtualization behavior.
+- No malicious indicators were identified during analysis.
+
+## Commands Used
+
+```bash
+tcpdump -i eth0 -w zeek-investigation.pcap
+zeek -r zeek-investigation.pcap
+cat conn.log | head -20
+cat http.log | head -20
+cat weird.log | head -20
+```
+## Analyst Conclusion
+
+Zeek network telemetry analysis identified expected host communications including NTP synchronization, HTTP package repository activity, and ICMP connectivity testing. Review of connection metadata, HTTP transactions, and protocol anomaly records did not identify malicious network activity or indicators of compromise. Observed checksum warnings were consistent with virtualized network adapter behavior in a WSL environment and did not require escalation.
+
 ## Skills Demonstrated
 
 - Network metadata analysis
