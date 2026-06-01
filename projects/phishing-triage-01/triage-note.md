@@ -1,7 +1,7 @@
 # SOC Escalation Summary — Phishing Investigation
 
 ## Summary
-Summary
+
 
 Date/Time:
 Sanitized for public release
