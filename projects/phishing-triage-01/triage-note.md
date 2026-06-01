@@ -40,7 +40,7 @@ Triage completed. Indicators extracted. Containment recommendations documented. 
   - None observed
 
 ## Analysis
-- Probable objective: Credeential Harvesting
+- Probable Objective: Credential Harvesting
 - Confidence and rationale:
   - Confidence: Medium–High
   - Rationale: lure characteristics + indicator reputation and/or authentication anomalies + destination mismatch patterns
