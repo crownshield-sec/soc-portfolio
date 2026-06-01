@@ -120,15 +120,16 @@ Analyst Conclusion
 Analysis of the reported email identified multiple phishing indicators including suspicious sender characteristics, urgency-based social engineering language, and embedded external hyperlinks. Based on the observed evidence, the message was assessed as a phishing attempt designed to obtain user credentials. Containment actions and user awareness guidance were recommended to reduce organizational risk.
 
 ## Skills Demonstrated
-Phishing email triage
-Email artifact analysis
-IOC extraction and tracking
-Security investigation workflows
-Risk assessment
-Escalation analysis
-Containment recommendations
-Analyst documentation
-SOC reporting
+
+- Phishing email triage
+- Email artifact analysis
+- IOC extraction and tracking
+- Security investigation workflows
+- Risk assessment
+- Escalation analysis
+- Containment recommendations
+- Analyst documentation
+- SOC reporting
 
 ## Notes
 All indicators, domains, and identifying artifacts have been sanitized for safe public sharing. This project is intended to demonstrate SOC investigation workflow, analyst documentation practices, and escalation-oriented reporting.
