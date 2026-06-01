@@ -27,17 +27,23 @@ Triage completed. Indicators extracted. Containment recommendations documented. 
 - Why it matters (risk):
   - Phishing may enable credential theft, malware delivery, or business process compromise.
 
-### Indicators Extracted
+Indicators Extracted
 
-- Sender / From: support@secure-alerts-example[.]com
-- Reply-To: alerts-example-mail[.]com
-- Domains:
-  - secure-alerts-example[.]com
-  - alerts-example-mail[.]com
-- URL(s):
-  - account-verification-login[.]com
-- Attachment:
-  - None observed
+Sender / From:
+support@secure-alerts-example[.]com
+
+Reply-To:
+alerts-example-mail[.]com
+
+Domains:
+- secure-alerts-example[.]com
+- alerts-example-mail[.]com
+
+URL(s):
+- account-verification-login[.]com
+
+Attachment:
+- None observed
 
 ## Analyst Assessment
 - Probable Objective: Credential Harvesting
