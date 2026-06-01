@@ -27,22 +27,22 @@ Level 1 triage completed. Indicators extracted and documented. Containment recom
 - Why it matters (risk):
   - Phishing may enable credential theft, malware delivery, or business process compromise.
 
-Indicators Extracted
+### Indicators Extracted
 
-Sender / From:
+**Sender / From:**  
 support@secure-alerts-example[.]com
 
-Reply-To:
+**Reply-To:**  
 alerts-example-mail[.]com
 
-Domains:
+**Domains:**
 - secure-alerts-example[.]com
 - alerts-example-mail[.]com
 
-URL(s):
+**URL(s):**
 - account-verification-login[.]com
 
-Attachment:
+**Attachment:**
 - None observed
 
 ## Analyst Assessment
