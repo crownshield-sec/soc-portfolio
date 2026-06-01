@@ -1,4 +1,4 @@
-# Escalation Summary — Phishing Email (Lab)
+# Phishing Escalation Summary
 
 ## Executive Summary
 A user reported a suspicious email containing an urgent call-to-action and a link to external infrastructure. Initial triage indicates likely phishing with potential for credential theft or follow-on compromise. Containment actions are recommended, with Level 2 validation required if user interaction or credential exposure is suspected.
@@ -10,12 +10,12 @@ A user reported a suspicious email containing an urgent call-to-action and a lin
 - T3: Containment recommendations prepared; escalation decision made
 
 ## Key Findings (Sanitized)
-- Email exhibits phishing characteristics (lure/urgency, destination mismatch patterns, or authentication anomalies).
-- Indicators include `<SANITIZED_DOMAIN_1>`, `<SANITIZED_DOMAIN_2>`, `<SANITIZED_URL_1>` (if observed).
-- Risk depends primarily on exposure confirmation (clicked link, credential entry, attachment execution).
+- secure-alerts-example[.]com
+- account-verification-login[.]com
+- alerts-example-mail[.]com
 
 ## Scope (Initial)
-- Known affected: 1 user (<SANITIZED_USER>)
+- Known affected: 1 reported user
 - Additional recipients: Unknown at Level 1; requires gateway search
 - Credential exposure: Unknown at Level 1; requires user confirmation and identity log review
 
