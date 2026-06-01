@@ -86,6 +86,20 @@ These characteristics are commonly associated with phishing campaigns targeting 
 
 The email was evaluated to determine the likelihood of phishing activity and potential business impact.
 
+## Findings
+
+| Assessment Area | Observation |
+|----------------|-------------|
+| Phishing Indicators | Multiple |
+| User Interaction Risk | High |
+| Credential Theft Risk | High |
+| Malware Delivery Indicators | Not Observed |
+| Business Impact | Potential account compromise |
+
+### Risk Rating
+
+**High**
+
 ## Analyst Findings
 
 - Reviewed reported phishing email artifacts.
