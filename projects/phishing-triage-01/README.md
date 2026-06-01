@@ -88,14 +88,14 @@ These characteristics are commonly associated with phishing campaigns targeting 
 
 The email was evaluated to determine the likelihood of phishing activity and potential business impact.
 
-## Findings
-Assessment Area	Observation
-Phishing Indicators	Multiple
-User Interaction Risk	High
-Credential Theft Risk	High
-Malware Delivery Indicators	Not Observed
-Business Impact	Potential account compromise
-Risk Rating High
+## Analyst Findings
+
+- Reviewed reported phishing email artifacts.
+- Identified urgency-based social engineering techniques.
+- Extracted sender, URL, and infrastructure indicators.
+- Assessed the message as a likely credential harvesting attempt.
+- Developed containment and escalation recommendations.
+- Documented findings suitable for SOC follow-up.
 
 The combination of urgency language, suspicious sender infrastructure, and embedded external links significantly increased the likelihood of credential theft.
 
