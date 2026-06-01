@@ -1,4 +1,4 @@
-# Incident Triage Note — Phishing Email (Lab)
+# SOC Escalation Summary — Phishing Investigation
 
 ## Summary
 Summary
