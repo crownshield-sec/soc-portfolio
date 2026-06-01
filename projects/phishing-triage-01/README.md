@@ -20,8 +20,6 @@ A user reported a suspicious email containing urgency-based messaging and an emb
 - Assessed phishing risk and likely attacker objective.
 - Documented containment recommendations and escalation guidance.
 
-The reported email was reviewed to identify suspicious sender characteristics, message content indicators, and embedded phishing elements.
-
 ## Email Artifact Analysis
 
 The reported email was reviewed to identify suspicious sender characteristics, message content indicators, and embedded phishing elements.
@@ -100,15 +98,17 @@ The email was evaluated to determine the likelihood of phishing activity and pot
 The combination of urgency language, suspicious sender infrastructure, and embedded external links significantly increased the likelihood of credential theft.
 
 ## Containment & Escalation Recommendations
-Recommended Actions
-Block identified domains and URLs at email security controls.
-Search for similar messages across the environment.
-Quarantine related emails where appropriate.
-Notify affected users.
-Reset credentials if user interaction occurred.
-Enable MFA where applicable.
-Escalate to Level 2 investigation if widespread delivery is identified.
-Analyst Findings
+## Recommended Actions
+
+- Block identified domains and URLs at email security controls.
+- Search for similar messages across the environment.
+- Quarantine related emails where appropriate.
+- Notify affected users.
+- Reset credentials if user interaction occurred.
+- Enable MFA where applicable.
+- Escalate to Level 2 investigation if widespread delivery is identified.
+  
+## Analyst Findings
 Reviewed reported phishing email artifacts.
 Identified urgency-based social engineering techniques.
 Extracted sender, URL, and infrastructure indicators.
