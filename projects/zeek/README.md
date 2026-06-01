@@ -41,6 +41,19 @@ The Zeek connection log was reviewed to identify source and destination communic
   <img src="images/zeek-conn-analysis.png" width="1000">
 </a>
 
+### Findings
+
+The connection log identified the following communication patterns:
+
+| Source IP | Destination IP | Protocol | Service | Observation |
+|------------|------------|------------|------------|------------|
+| 172.30.126.212 | 185.125.190.57 | UDP | NTP | Normal time synchronization activity |
+| 172.30.126.212 | 104.20.23.154 | TCP | HTTP | Web communication observed |
+| 172.30.126.212 | 172.66.152.176 | TCP | HTTP | HTTP traffic associated with testing activity |
+| 172.30.126.212 | 142.251.34.142 | ICMP | Ping | Connectivity testing with Google |
+
+No suspicious network connections were identified during this review.
+
 ## HTTP Analysis
 
 The Zeek HTTP log was reviewed to identify web requests, response codes, and application-layer metadata observed during packet capture analysis.
@@ -65,18 +78,7 @@ The HTTP log identified successful web communications originating from the monit
 
 The observed traffic was consistent with Ubuntu package repository communications generated during system package installation activities. No suspicious HTTP requests or anomalous response codes were identified.
 
-### Findings
 
-The connection log identified the following communication patterns:
-
-| Source IP | Destination IP | Protocol | Service | Observation |
-|------------|------------|------------|------------|------------|
-| 172.30.126.212 | 185.125.190.57 | UDP | NTP | Normal time synchronization activity |
-| 172.30.126.212 | 104.20.23.154 | TCP | HTTP | Web communication observed |
-| 172.30.126.212 | 172.66.152.176 | TCP | HTTP | HTTP traffic associated with testing activity |
-| 172.30.126.212 | 142.251.34.142 | ICMP | Ping | Connectivity testing with Google |
-
-No suspicious network connections were identified during this review.
 
 ## Skills Demonstrated
 
