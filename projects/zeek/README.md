@@ -10,12 +10,13 @@ Network telemetry was reviewed using Zeek to understand host communication patte
 
 ## Analyst Investigation Workflow
 
-- Reviewed Zeek network connection logs.
-- Identified source and destination IP communication.
-- Analyzed protocol and service metadata.
-- Reviewed connection duration, byte counts, and connection states.
-- Documented findings and analyst interpretation.
-
+- Processed packet capture telemetry using Zeek.
+- Reviewed connection metadata in conn.log.
+- Investigated HTTP transactions in http.log.
+- Examined protocol anomalies in weird.log.
+- Identified source and destination communication patterns.
+- Documented findings and analyst conclusions.
+  
 ## Zeek Logs Reviewed
 
 - conn.log
@@ -120,6 +121,7 @@ zeek -r zeek-investigation.pcap
 cat conn.log | head -20
 cat http.log | head -20
 cat weird.log | head -20
+ls
 ```
 ## Analyst Conclusion
 
