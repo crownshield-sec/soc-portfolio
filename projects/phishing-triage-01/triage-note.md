@@ -19,7 +19,7 @@ Affected Assets:
 One reported user mailbox
 
 Status:
-Triage completed. Indicators extracted. Containment recommendations documented. Escalation to Level 2 recommended pending user exposure validation.
+Level 1 triage completed. Indicators extracted and documented. Containment recommendations developed. Escalation to Level 2 is conditionally recommended pending user exposure validation and scope assessment.
 
 ## Initial Observation
 - What triggered the alert/report:
