@@ -45,12 +45,14 @@ alerts-example-mail[.]com
 **Attachment:**
 - None observed
 
-## Analyst Assessment
-- Probable Objective: Credential Harvesting
-- Confidence and rationale:
-  - Confidence: Medium–High
-  - Rationale:
-    The message contained multiple phishing indicators including urgency-based social engineering language, suspicious sender infrastructure, domain mismatches, and an external credential collection URL. These characteristics are commonly associated with credential harvesting campaigns.
+### Analyst Assessment
+
+**Probable Objective:** Credential Harvesting
+
+**Confidence:** Medium–High
+
+**Rationale:**
+The message contained multiple phishing indicators including urgency-based social engineering language, suspicious sender infrastructure, domain mismatches, and an external credential collection URL. These characteristics are commonly associated with credential harvesting campaigns.
 
 ## Recommended Response Actions
 - Immediate containment:
