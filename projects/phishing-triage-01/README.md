@@ -29,11 +29,12 @@ The reported email was reviewed to identify suspicious sender characteristics, m
 <a href="images/phishing-email-review.png">
   <img src="images/phishing-email-review.png" width="1000">
 </a>
-## Findings
 
-The reviewed message contained multiple phishing characteristics:
 
 ## Email Artifact Analysis 
+The reviewed message contained multiple phishing characteristics
+
+## Findings
 
 | Observation | Details |
 |------------|------------|
@@ -46,6 +47,8 @@ The reviewed message contained multiple phishing characteristics:
 The message attempted to pressure the recipient into immediate action through urgency-based language and an external login request.
 
 ## Indicator Extraction Analysis
+
+## Findings
 
 Indicators of compromise (IOCs) were extracted and documented for investigation and potential blocking activities.
 
@@ -140,6 +143,3 @@ Analysis of the reported email identified multiple phishing indicators including
 
 All indicators, domains, URLs, and identifying artifacts have been sanitized for safe public sharing. This project is intended to demonstrate phishing triage workflow, IOC extraction, analyst documentation, and escalation-oriented reporting practices.
 
-
-
-All indicators, domains, and identifying artifacts have been sanitized for safe public sharing. This project is intended to demonstrate SOC investigation workflow, analyst documentation practices, and escalation-oriented reporting.
