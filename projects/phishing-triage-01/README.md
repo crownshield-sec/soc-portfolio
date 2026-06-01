@@ -117,6 +117,7 @@ Developed containment and escalation recommendations.
 Documented findings suitable for SOC follow-up.
 Analyst Conclusion
 
+## Analyst Conclusion
 Analysis of the reported email identified multiple phishing indicators including suspicious sender characteristics, urgency-based social engineering language, and embedded external hyperlinks. Based on the observed evidence, the message was assessed as a phishing attempt designed to obtain user credentials. Containment actions and user awareness guidance were recommended to reduce organizational risk.
 
 ## Skills Demonstrated
