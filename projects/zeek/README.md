@@ -78,7 +78,27 @@ The HTTP log identified successful web communications originating from the monit
 
 The observed traffic was consistent with Ubuntu package repository communications generated during system package installation activities. No suspicious HTTP requests or anomalous response codes were identified.
 
+## Protocol Anomaly Analysis
 
+The Zeek anomaly log (`weird.log`) was reviewed to identify protocol irregularities and unusual network behaviors observed during packet analysis.
+
+### Anomaly Log Review
+
+<a href="images/zeek-weird-analysis.png">
+  <img src="images/zeek-weird-analysis.png" width="1000">
+</a>
+
+### Findings
+
+The anomaly log identified the following observations:
+
+| Observation | Analyst Interpretation |
+|------------|------------|
+| bad_UDP_checksum | Expected checksum offloading behavior observed in the WSL virtualized network environment |
+| bad_TCP_checksum | Packet checksum validation issue associated with network adapter offloading |
+| active_connection_reuse | Normal TCP session reuse observed during HTTP communications |
+
+No anomalous protocol behavior requiring escalation was identified. The observed events were consistent with expected operating system and network stack behavior.
 
 ## Skills Demonstrated
 
