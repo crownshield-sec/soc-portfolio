@@ -1,6 +1,6 @@
 # Phishing Triage Investigation — Email Security Analysis
 
-Project Summary
+## Project Summary
 This project demonstrates a phishing email triage workflow involving email artifact review, indicator extraction, risk assessment, containment recommendations, and escalation-oriented analyst documentation. All indicators have been sanitized for public portfolio presentation.
 
 ## Investigation Objective
@@ -28,16 +28,16 @@ The reported email was reviewed to identify suspicious sender characteristics, m
 <a href="images/phishing-email-review.png">
   <img src="images/phishing-email-review.png" width="1000">
 </a>
-Findings
+## Findings
 
 The reviewed message contained multiple phishing characteristics:
 
 ## Observation	Details
-Message Theme	Account verification request
-Social Engineering Technique	Urgency and fear-based language
-Embedded Hyperlink	Present
-External Sender	Yes
-Credential Harvesting Indicators	Observed
+- Message Theme	Account verification request
+- Social Engineering Technique	Urgency and fear-based language
+- Embedded Hyperlink	Present
+- External Sender	Yes
+- Credential Harvesting Indicators	Observed
 
 The message attempted to pressure the recipient into immediate action through urgency-based language and an external login request.
 
