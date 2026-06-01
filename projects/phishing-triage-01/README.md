@@ -113,7 +113,7 @@ The combination of urgency language, suspicious sender infrastructure, and embed
 - Notify affected users.
 - Reset credentials if user interaction occurred.
 - Enable MFA where applicable.
-- Escalate to Level 2 investigation if user interactin is validated and widespread delivery is identified.
+- Escalate to Level 2 investigation if user interaction is validated and widespread delivery is identified.
   
 ## Analyst Findings
 
