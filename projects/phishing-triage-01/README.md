@@ -123,14 +123,14 @@ The combination of urgency language, suspicious sender infrastructure, and embed
 - Escalate to Level 2 investigation if widespread delivery is identified.
   
 ## Analyst Findings
-Reviewed reported phishing email artifacts.
-Identified urgency-based social engineering techniques.
-Extracted sender, URL, and infrastructure indicators.
-Assessed the message as a likely credential harvesting attempt.
-Developed containment and escalation recommendations.
-Documented findings suitable for SOC follow-up.
-Analyst Conclusion
 
+- Reviewed reported phishing email artifacts.
+- Identified urgency-based social engineering techniques.
+- Extracted sender, URL, and infrastructure indicators.
+- Assessed the message as a likely credential harvesting attempt.
+- Developed containment and escalation recommendations.
+- Documented findings suitable for SOC follow-up.
+- 
 ## Analyst Conclusion
 Analysis of the reported email identified multiple phishing indicators including suspicious sender characteristics, urgency-based social engineering language, and embedded external hyperlinks. Based on the observed evidence, the message was assessed as a phishing attempt designed to obtain user credentials. Containment actions and user awareness guidance were recommended to reduce organizational risk.
 
