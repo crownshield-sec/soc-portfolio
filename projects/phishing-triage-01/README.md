@@ -12,13 +12,13 @@ Analyze a reported phishing email to identify suspicious indicators, assess risk
 A user reported a suspicious email containing urgency-based messaging and an embedded hyperlink requesting immediate action. The objective was to determine whether the message represented a phishing attempt, extract relevant indicators, assess risk, and document recommended response actions.
 
 ## Analyst Investigation Workflow
-Reviewed email header and message body artifacts.
-Evaluated sender legitimacy and delivery characteristics.
-Identified social engineering techniques and lure indicators.
-Extracted domains, URLs, and email-based indicators.
-Assessed phishing risk and likely attacker objective.
-Documented containment recommendations and escalation guidance.
-Email Artifact Analysis
+
+- Reviewed email header and message body artifacts.
+- Evaluated sender legitimacy and delivery characteristics.
+- Identified social engineering techniques and lure indicators.
+- Extracted domains, URLs, and email-based indicators.
+- Assessed phishing risk and likely attacker objective.
+- Documented containment recommendations and escalation guidance.
 
 The reported email was reviewed to identify suspicious sender characteristics, message content indicators, and embedded phishing elements.
 
