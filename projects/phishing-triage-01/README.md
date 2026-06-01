@@ -25,6 +25,7 @@ A user reported a suspicious email containing urgency-based messaging and an emb
 The reported email was reviewed to identify suspicious sender characteristics, message content indicators, and embedded phishing elements.
 
 ## Email Review
+### Email Review Evidence
 <a href="images/phishing-email-review.png">
   <img src="images/phishing-email-review.png" width="1000">
 </a>
