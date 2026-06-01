@@ -34,9 +34,12 @@ Network telemetry was reviewed using Zeek to understand host communication patte
 
 The Zeek connection log was reviewed to identify source and destination communications, protocols, and observed services during packet capture analysis.
 
+
 ### Connection Log Review
 
-<img src="images/zeek-conn-analysis.png" width="1000">
+<a href="images/zeek-conn-analysis.png">
+  <img src="images/zeek-conn-analysis.png" width="1000">
+</a>
 
 ### Findings
 
