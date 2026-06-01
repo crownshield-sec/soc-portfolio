@@ -1,6 +1,6 @@
 # SOC Escalation Summary — Phishing Investigation
 
-## Summary
+## Executive Summary
 
 
 Date/Time:
@@ -39,13 +39,14 @@ Triage completed. Indicators extracted. Containment recommendations documented. 
 - Attachment:
   - None observed
 
-## Analysis
+## Analyst Assessment
 - Probable Objective: Credential Harvesting
 - Confidence and rationale:
   - Confidence: Medium–High
-  - Rationale: lure characteristics + indicator reputation and/or authentication anomalies + destination mismatch patterns
+  - Rationale:
+    The message contained multiple phishing indicators including urgency-based social engineering language, suspicious sender infrastructure, domain mismatches, and an external credential collection URL. These characteristics are commonly associated with credential harvesting campaigns.
 
-## Recommended Next Actions
+## Recommended Response Actions
 - Immediate containment:
   - Quarantine the email and search for similar messages across mailboxes (same sender/domain/subject).
   - Block domains/URLs at email security gateway, DNS/proxy, and web filtering as applicable.
