@@ -62,12 +62,12 @@ IOC Review
 | Credential Harvesting Indicators | Observed |
 | Indicator Type | Sanitized Value | Observation |
 
+| Indicator Type | Sanitized Value | Observation |
 |------------|------------|------------|
 | Sender Domain | secure-alerts-example[.]com | Suspicious sender |
 | Embedded URL | account-verification-login[.]com | Credential harvesting risk |
 | Reply-To Domain | alerts-example-mail[.]com | Domain mismatch observed |
 | Email Subject | Account Verification Required | Urgency-based lure |
-
 ## Risk Assessment
 
 The email was evaluated to determine the likelihood of phishing activity and potential business impact.
