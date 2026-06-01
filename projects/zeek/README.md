@@ -30,6 +30,27 @@ Network telemetry was reviewed using Zeek to understand host communication patte
 - jq / text parsing
 - Network telemetry analysis
 
+## Connection Analysis
+
+The Zeek connection log was reviewed to identify source and destination communications, protocols, and observed services during packet capture analysis.
+
+### Connection Log Review
+
+<img src="images/zeek-conn-analysis.png" width="1000">
+
+### Findings
+
+The connection log identified the following communication patterns:
+
+| Source IP | Destination IP | Protocol | Service | Observation |
+|------------|------------|------------|------------|------------|
+| 172.30.126.212 | 185.125.190.57 | UDP | NTP | Normal time synchronization activity |
+| 172.30.126.212 | 104.20.23.154 | TCP | HTTP | Web communication observed |
+| 172.30.126.212 | 172.66.152.176 | TCP | HTTP | HTTP traffic associated with testing activity |
+| 172.30.126.212 | 142.251.34.142 | ICMP | Ping | Connectivity testing with Google |
+
+No suspicious network connections were identified during this review.
+
 ## Skills Demonstrated
 
 - Network metadata analysis
