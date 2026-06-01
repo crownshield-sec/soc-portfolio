@@ -19,9 +19,11 @@ Network telemetry was reviewed using Zeek to understand host communication patte
 ## Zeek Logs Reviewed
 
 - conn.log
-- dns.log
 - http.log
-- ssl.log
+- weird.log
+- files.log
+- packet_filter.log
+- reporter.log
 
 ## Tools & Technologies
 
