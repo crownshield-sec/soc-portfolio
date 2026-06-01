@@ -59,6 +59,7 @@ Triage completed. Indicators extracted. Containment recommendations documented. 
 
 ## Escalation Decision
 Escalate to Level 2: Conditional
+
 Reason:
 Escalation is recommended if user interaction occurred, credentials may have been exposed, additional recipients are identified, or related phishing activity is observed elsewhere in the environment.
 
