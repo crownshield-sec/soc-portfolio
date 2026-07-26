@@ -72,7 +72,7 @@ ip.addr == <SANITIZED_IP>
 
 The DNS activity established that the affected workstation contacted the sanitized domains after the application was executed. DNS evidence alone did not confirm malicious activity, but the timing, destination reputation, and related outbound sessions increased the risk associated with the alert.
 
-### HTTP Traffic Analysis
+### HTTP/TLS Traffic Analysis
 **Display filter used:** `http`
 
 <a href="images/dns_wireshark.png">
@@ -80,6 +80,14 @@ The DNS activity established that the affected workstation contacted the sanitiz
 </a>
 
 **Observation**
+
+- The `http` display filter was used to isolate unencrypted HTTP traffic in the capture.
+- The filtered view was reviewed for outbound requests, destination hosts, request methods, and other visible application-layer details.
+- No conclusion about malicious content was made from the screenshot alone; the HTTP activity was considered together with DNS results, destination reputation, timing, and the wider alert context.
+
+**Analyst Assessment**
+
+The HTTP review helped determine whether any readable application-layer communication was present. Because much of the relevant outbound activity was TLS-encrypted, the investigation could not rely solely on HTTP payload inspection. The HTTP findings therefore served as supporting evidence rather than definitive proof of command-and-control activity.
 
 ### ICMP Traffic Analysis
 
