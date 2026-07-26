@@ -55,6 +55,7 @@ ip.addr == <SANITIZED_IP>
 <a href="images/dns_wireshark.png">
   <img src="images/dns_wireshark.png" width="850">
 </a>
+
 **Observation**
 
 - The affected workstation generated DNS queries for `<SANITIZED_DOMAIN_1>` and `<SANITIZED_DOMAIN_2>` during the post-execution analysis window.
