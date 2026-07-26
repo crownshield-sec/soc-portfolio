@@ -52,6 +52,7 @@ ip.addr == <SANITIZED_IP>
 
 ### DNS Traffic Analysis
 
+**Display filter used:**
 <a href="images/dns_wireshark.png">
   <img src="images/dns_wireshark.png" width="850">
 </a>
