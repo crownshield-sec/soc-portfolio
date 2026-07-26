@@ -26,15 +26,16 @@ A user downloaded a “productivity” application to improve work efficiency. S
 - OSINT enrichment of domains/IPs/hashes using VirusTotal and/or Cisco Talos
 
 ## What I Did (SOC Level 1 Workflow)
-- Reviewed alert context and formed initial triage hypothesis.
+
+- Reviewed the alert context and formed an initial triage hypothesis.
 - Analyzed network traffic in Wireshark to identify:
   - DNS queries and suspicious domain patterns
   - HTTP(S) requests and destination infrastructure
-  - Repetitive beacons / abnormal connection frequency (if present)
-- Extracted indicators (domains, IPs, URLs, file hash if available) and recorded them in an IOC tracker.
-- Enriched indicators using VirusTotal/Talos and assessed reputation/associations.
-- Determined severity and recommended containment steps.
-- Produced a concise escalation package for Level 2 with findings, scope assumptions, and next investigative pivots.
+  - Connection frequency and timing patterns to assess possible beaconing
+- Extracted available indicators, including domains, IP addresses, URLs, and file hashes, and recorded them in an IOC tracker.
+- Enriched indicators using VirusTotal and Cisco Talos and assessed their reputation and known associations.
+- Determined the incident severity and recommended containment actions.
+- Produced a concise Level 2 escalation package containing findings, scope assumptions, and recommended investigative pivots.
 
 ## Findings (Summary)
 - Indicators and network behavior were consistent with a trojanized installer or post-execution beaconing.
