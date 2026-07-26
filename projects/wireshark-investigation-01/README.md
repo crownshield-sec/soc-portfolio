@@ -75,11 +75,11 @@ The DNS activity established that the affected workstation contacted the sanitiz
 ### HTTP Traffic Analysis
 **Display filter used:** `http`
 
-**Observation**
-
 <a href="images/dns_wireshark.png">
   <img src="images/dns_wireshark.png" width="850">
 </a>
+
+**Observation**
 
 ### ICMP Traffic Analysis
 
