@@ -77,5 +77,6 @@ I would close or downgrade the alert if:
 - **Persistence review:** Examine scheduled tasks, services, startup folders, registry run keys, and newly installed applications.
 - **Credential exposure:** Review suspicious authentication activity and reset credentials if credential theft is suspected.
 - **Network containment:** Block confirmed malicious indicators at DNS, proxy, firewall, and endpoint controls.
+- Endpoint validation: Review EDR telemetry, process trees, command-line activity, file creation, registry modifications, and persistence mechanisms.
 ## Sanitization Notes
 All identifiers (usernames, hostnames, IPs, domains, timestamps, hashes) are anonymized or replaced with representative values to prevent disclosure of sensitive information.
