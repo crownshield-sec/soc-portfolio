@@ -83,7 +83,7 @@ The DNS activity established that the affected workstation contacted the sanitiz
 
 - The `http` display filter was used to isolate unencrypted HTTP traffic in the capture.
 - The filtered view was reviewed for outbound requests, destination hosts, request methods, and other visible application-layer details.
-- No conclusion about malicious content was made from the screenshot alone; the HTTP activity was considered together with DNS results, destination reputation, timing, and the wider alert context.
+- No conclusion about malicious content was made from the HTTP view alone; the HTTP activity was considered together with DNS results, destination reputation, timing, and the wider alert context.
 
 **Analyst Assessment**
 
