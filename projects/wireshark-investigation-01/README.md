@@ -91,9 +91,14 @@ The HTTP review helped determine whether any readable application-layer communic
 
 ### ICMP Traffic Analysis
 
+**Display filter used:** `icmp`
+
 <a href="images/dns_wireshark.png">
   <img src="images/dns_wireshark.png" width="850">
 </a>
+
+**Observation**
+
 
 ### Host IP Traffic Review
 
