@@ -47,30 +47,35 @@ A user downloaded a “productivity” application to improve work efficiency. S
 - Level 2 follow-up: collect host triage artifacts, validate persistence, and run environment-wide searches for matching IOCs and behaviors.
 
 ## Decision (SOC Level 1)
+
 **Disposition:** Escalated to Level 2
 
-**Reasoning (why escalate):**
-- The email exhibits phishing indicators (lure + suspicious link/sender artifacts) with potential for credential capture or follow-on compromise.
-- Exposure is not fully confirmed at Level 1 (unknown click/credential entry), and validation requires deeper telemetry review.
-- Indicators warrant containment actions (quarantine + block) and environment scoping to prevent campaign spread.
+### Reasoning for escalation
 
-**Level 1 stop condition (when I would NOT escalate):**
-- The message is conclusively benign (validated sender + alignment with business context) **and**
-- No interaction occurred **and**
-- No similar messages are present in the environment after a quick gateway/mailbox search.
+- The network activity occurred shortly after execution of the downloaded application.
+- DNS and HTTPS communication patterns were inconsistent with expected business use.
+- Repeated outbound connections indicated possible beaconing or command-and-control activity.
+- OSINT enrichment identified suspicious or low-reputation infrastructure associated with the observed indicators.
+- Level 1 did not have sufficient endpoint telemetry to confirm process execution, persistence, payload activity, or the full scope of compromise.
+- The available evidence justified immediate containment and deeper host-based investigation.
 
-**Possible Level 2 validation:**
-- **Exposure confirmation:** user interaction status (clicked link, entered credentials, opened attachment).
-- **Message scope:** search mail gateway and mailboxes for matching sender/subject/URL patterns (campaign suppression).
-- **Identity risk:** review sign-in logs for abnormal activity (new device, impossible travel, MFA prompts, suspicious IPs).
-- **Mailbox tampering:** check for inbox rules, forwarding, OAuth app grants, unusual mailbox access.
-- **IOC expansion:** enrich domains/URLs/IPs and identify related infrastructure for broader hunting.
+### Level 1 stop condition — when I would not escalate
 
-## Artifacts in This Folder
-- `triage-note.md` — Incident triage note (sanitized)
-- `wireshark-investigation.md` — Wireshark analysis notes and pivot logic
-- `ioc-tracking.csv` — Sanitized IOC tracking table
-- `escalation-summary.md` — Level 2 escalation summary (sanitized)
+I would close or downgrade the alert if:
 
+- The application source and file were conclusively validated as legitimate.
+- The observed destinations were verified as approved vendor infrastructure.
+- The network traffic matched documented application behavior.
+- No suspicious child processes, persistence mechanisms, credential access, or abnormal outbound activity were identified.
+- OSINT and internal threat-intelligence checks produced no adverse findings.
+
+### Possible Level 2 validation
+
+- **Endpoint validation:** Review EDR telemetry, process trees, command-line activity, file creation, registry modifications, and persistence mechanisms.
+- **File analysis:** Retrieve the downloaded file and validate its hash, signature, metadata, and sandbox behavior.
+- **Scope assessment:** Search for the same file hash, domain, IP addresses, URLs, process names, and behaviors across the environment.
+- **Persistence review:** Examine scheduled tasks, services, startup folders, registry run keys, and newly installed applications.
+- **Credential exposure:** Review suspicious authentication activity and reset credentials if credential theft is suspected.
+- **Network containment:** Block confirmed malicious indicators at DNS, proxy, firewall, and endpoint controls.
 ## Sanitization Notes
 All identifiers (usernames, hostnames, IPs, domains, timestamps, hashes) are anonymized or replaced with representative values to prevent disclosure of sensitive information.
