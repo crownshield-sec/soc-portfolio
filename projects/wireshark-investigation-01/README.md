@@ -25,11 +25,17 @@ A workstation generated unusual outbound network activity. The objective was to 
 
 ## Wireshark Display Filters Used
 
-### DNS Traffic
+### DNS Traffic Analysis
 
-```text
-dns
-```
+**Observation**
+
+- The affected workstation generated DNS queries for `<SANITIZED_DOMAIN_1>` and `<SANITIZED_DOMAIN_2>` during the post-execution analysis window.
+- The domains resolved to `<SANITIZED_IP_1>`, which was recorded in the IOC tracker.
+- The DNS results provided the destination indicators used for threat-intelligence enrichment and further traffic correlation.
+
+**Analyst Assessment**
+
+The DNS activity established that the affected workstation contacted the sanitized domains after the application was executed. DNS evidence alone did not confirm malicious activity, but the timing, destination reputation, and related outbound sessions increased the risk associated with the alert.
 
 ### HTTP Traffic
 
