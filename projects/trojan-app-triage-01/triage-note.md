@@ -37,7 +37,7 @@
 - Immediate containment:
   - Isolate endpoint via EDR (or remove from network) pending validation.
   - Block identified domains at DNS/proxy and destination IP at firewall, as appropriate.
-  - Preserve evidence: retain pcap, SIEM alert context, and installer artifact (if available).
+  - Preserve the PCAP and SIEM alert context. Acquire and retain the installer artifact if it becomes available during Level 2 investigation.
 - Further investigation pivots:
   - Confirm initiating process (EDR process tree/command line) and align with network timestamps.
   - Check persistence mechanisms (autoruns/services/scheduled tasks).
