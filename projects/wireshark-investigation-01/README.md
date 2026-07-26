@@ -73,6 +73,9 @@ ip.addr == <SANITIZED_IP>
 The DNS activity established that the affected workstation contacted the sanitized domains after the application was executed. DNS evidence alone did not confirm malicious activity, but the timing, destination reputation, and related outbound sessions increased the risk associated with the alert.
 
 ### HTTP Traffic Analysis
+**Display filter used:** `http`
+
+**Observation**
 
 <a href="images/dns_wireshark.png">
   <img src="images/dns_wireshark.png" width="850">
