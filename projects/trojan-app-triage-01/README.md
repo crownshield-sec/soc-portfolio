@@ -32,7 +32,7 @@ A user downloaded a “productivity” application to improve work efficiency. S
   - DNS queries and suspicious domain patterns
   - HTTP(S) requests and destination infrastructure
   - Connection frequency and timing patterns to assess possible beaconing
-- Extracted available indicators, including domains, IP addresses, and URLs, and recorded them in an IOC tracker.
+- Extracted available indicators, including domains and IP addresses, and recorded them in an IOC tracker.
 - Enriched indicators using VirusTotal and Cisco Talos and assessed their reputation and known associations.
 - Determined the incident severity and recommended containment actions.
 - Produced a concise Level 2 escalation package containing findings, scope assumptions, and recommended investigative pivots.
