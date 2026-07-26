@@ -79,14 +79,15 @@ ip.addr == <SANITIZED_IP>
 
 ---
 
+
 ## Investigation Findings
-
-- Observed DNS resolution requests for external domains.
-- Reviewed HTTP communication behavior and request patterns.
-- Analyzed ICMP traffic generated during host connectivity testing.
-- Investigated IP-based communication patterns using Wireshark display filters.
-- Documented protocol activity and packet-level investigation workflow.
-
+- The affected workstation generated DNS queries for the sanitized domains during the post-execution analysis window.
+- The domains resolved to the sanitized destination IP recorded in the IOC tracker.
+- The host established outbound encrypted sessions with the identified infrastructure.
+- Packet-content inspection was limited by TLS encryption; the assessment relied on DNS resolution, destination correlation, timestamps, and connection patterns.
+- Connection frequency and timing were reviewed for possible beacon-like behavior, but packet evidence alone did not conclusively confirm command-and-control activity.
+- ICMP traffic was consistent with connectivity testing and was not considered part of the suspicious activity.
+- The network evidence supported escalation for endpoint-level validation, file acquisition, persistence review, and environment-wide scoping.
 ---
 
 ## Notes
