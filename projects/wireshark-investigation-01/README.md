@@ -108,14 +108,20 @@ The ICMP traffic was treated as benign background or connectivity-testing activi
 
 ### Host IP Traffic Review
 
-**Display filter used:** `IP`
+**Display filter used:** `ip.addr == <SANITIZED>`
 
 <a href="images/dns_wireshark.png">
   <img src="images/dns_wireshark.png" width="850">
 </a>
 
 **Observation**
+- The `ip.addr == <SANITIZED_IP>` display filter was used to isolate traffic involving the affected workstation.
+- The filtered traffic was reviewed by destination IP, protocol, timestamp, and connection frequency.
+- The host-specific view helped correlate the workstation with the sanitized domains and destination infrastructure during the post-execution analysis window.
 
+**Analyst Assessment**
+
+- The host-focused review supported the conclusion that the affected workstation initiated the relevant outbound communications. It strengthened the correlation between application execution, the SIEM alert, and the observed network activity. However, endpoint telemetry was still required to identify the initiating process and confirm whether the host was compromised.
 ---
 
 
