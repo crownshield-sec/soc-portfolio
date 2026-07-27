@@ -98,7 +98,13 @@ The HTTP review helped determine whether any readable application-layer communic
 </a>
 
 **Observation**
+- The `icmp` display filter was used to isolate ICMP traffic in the capture.
+- The packets were reviewed to determine whether they were related to the suspicious outbound activity.
+- The observed ICMP traffic was consistent with host-connectivity testing rather than callback or command-and-control behavior.
 
+**Analyst Assessment**
+
+The ICMP traffic was treated as benign background or connectivity-testing activity. It was excluded from the primary escalation rationale, which relied on DNS resolution, suspicious destination infrastructure, outbound encrypted sessions, and connection timing.
 
 ### Host IP Traffic Review
 
