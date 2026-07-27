@@ -122,6 +122,7 @@ The ICMP traffic was treated as benign background or connectivity-testing activi
 **Analyst Assessment**
 
 The host-focused review supported the conclusion that the affected workstation initiated the relevant outbound communications. It strengthened the correlation between application execution, the SIEM alert, and the observed network activity. However, endpoint telemetry was still required to identify the initiating process and confirm whether the host was compromised.
+
 ---
 
 ## Investigation Findings
