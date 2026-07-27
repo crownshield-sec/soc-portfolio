@@ -108,9 +108,13 @@ The ICMP traffic was treated as benign background or connectivity-testing activi
 
 ### Host IP Traffic Review
 
+**Display filter used:** `IP`
+
 <a href="images/dns_wireshark.png">
   <img src="images/dns_wireshark.png" width="850">
 </a>
+
+**Observation**
 
 ---
 
